@@ -2,10 +2,11 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from proceso import Proceso
-from scheduler.fcfs_scheduler import FCFSScheduler
-from scheduler.round_robin_scheduler import RoundRobinScheduler
-from repositorio import RepositorioProcesos
+from .proceso import Proceso
+from .scheduler.fcfs_scheduler import FCFSScheduler
+from .scheduler.round_robin_scheduler import RoundRobinScheduler
+from .repositorio import RepositorioProcesos
+
 
 
 def mostrar_menu():
